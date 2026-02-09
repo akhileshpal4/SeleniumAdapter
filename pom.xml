@@ -6,13 +6,19 @@
 
     <groupId>com.autoworld</groupId>
     <artifactId>seleniumadapter</artifactId>
-    <version>0.0.1</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Dependency versions -->
+        <testng.version>7.11.0</testng.version>
+        <selenium.version>4.39.0</selenium.version>
+        <webdrivermanager.version>6.3.3</webdrivermanager.version>
+        <codec.version>1.20.0</codec.version>
     </properties>
 
     <dependencies>
@@ -20,28 +26,29 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.18.1</version>
+            <version>${selenium.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.7.0</version>
+            <version>${webdrivermanager.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.16.1</version>
+            <version>${codec.version}</version>
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
-            <groupId>com.autoworld</groupId>
-            <artifactId>configprovider</artifactId>
-            <version>0.0.1</version>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
         </dependency>
 
     </dependencies>
